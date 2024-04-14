@@ -1,0 +1,128 @@
+.data {
+  padding: 32px;
+  border: 1px solid #665c54;
+  border-radius: 8px;
+  box-shadow: 5px 5px 20px 1px #00000091;
+  width: 100%;
+}
+
+.filter {
+  padding: 12px;
+  background: #282828;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+}
+
+.filter span {
+  font-weight: 500;
+}
+
+.filter select {
+  min-width: 100px;
+  background: #1d2021;
+  border-radius: 6px;
+  padding: 6px;
+}
+
+.filter select option {
+  background: #1d2021;
+}
+
+.data table {
+  border: 1px solid #3c3836;
+  border-collapse: collapse;
+  border-radius: 8px;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.data table thead {
+  background-color: #458588;
+  height: 45px;
+}
+
+.data table thead tr th {
+  width: 10%;
+  padding: 8px;
+}
+
+.data table tbody tr td {
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  padding: 8px;
+}
+
+.data table tbody tr:nth-child(odd) {
+  background: #3c3836;
+}
+
+.data .table-footer {
+  background: #3c3836;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 3px;
+  box-shadow: 5px 5px 10px 2px #00000091;
+}
+
+.data .table-footer .pagination {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.data .table-footer .pagination .pagination-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+
+.data .table-footer .pagination-actions {
+  display: flex;
+  gap: 6px;
+}
+
+.data .table-footer .pagination-actions button {
+  padding: 6px;
+  min-width: 90px;
+  background-color: #458588;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+}
+
+.data .table-footer .pagination-actions button:not(.disabled):hover {
+  filter: contrast(2);
+}
+
+.data .table-footer .pagination-actions button.disabled {
+  background-color: #83a598;
+}
+
+.currentPage, .perPage {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.currentPage input,
+.perPage input {
+  background-color: #1d2021;
+  border: 1px solid #282828;
+  outline: none;
+  font-size: 16px;
+  padding: 4px;
+  max-width: 100px;
+  text-align: center;
+}
+
