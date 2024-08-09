@@ -2,7 +2,7 @@ import { useState } from "react";
 import { createComment } from "../../features/services/features_service";
 import '../assets/comment.css'
 
-const BASE_URL = 'http://localhost:3000'
+const BASE_URL = 'https://earthquakes-api.onrender.com'
 
 export function Comment({ featureId, setFeatureId, newComment, setNewComment }) {
   const [body, setBody] = useState('')
