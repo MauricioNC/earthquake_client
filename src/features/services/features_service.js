@@ -3,7 +3,7 @@ import axios from 'axios'
 export async function getFeatures(options) {
   try {
     const { page, per_page, magType } = options
-    const response = await axios.get(`http://localhost:3000/api/v1/features?page=${page}&per_page=${per_page}&mag_type=${magType}`)
+    const response = await axios.get(`https://earthquakes-api.onrender.com/api/v1/features?page=${page}&per_page=${per_page}&mag_type=${magType}`)
     return response.data
   }
   catch (err) {
